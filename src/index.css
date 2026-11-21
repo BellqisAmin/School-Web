@@ -1,32 +1,48 @@
 @import "tailwindcss";
+body,html{
+    direction: rtl;
+}
+@font-face {
+    font-family: Estedad;
+    src: url(assets/font/Estedad-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url(assets/font/Vazirmatn-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Vazirmatn-Bold;
+    src: url(assets/font/Vazirmatn-Bold.ttf);
+}
+@theme {
+    --font-Estedad:Estedad;
+    --font-Vazirmatn:Vazirmatn;
+    --font-Vazirmatn-Bold:Vazirmatn-Bold;
+    /* Primary Colors */
+    --color-primary: #07377f;
+    --color-primary-dark: #052b66;
+    --color-primary-blue: #064db5;
+    --color-primary-light: #0875ed;
 
-@theme{
-    /* praimary-color */
-    --color-primary:#07377f;
-    --color-primary-dark:#052b66;
-    --color-primary-blue:#064db5;
-    --color-primary-light:#0875ed;
+    /* Background Colors */
+    --color-background: #ffffff;
+    --color-background-light: #f4f8ff;
+    --color-background-card: #eaf2ff;
 
-    /* backroundcolor */
-    --color-background:#ffffff;
-    --color-background-light:#f4f8ff;
-    --color-background-cart:#eaf2ff;
+    /* Border Colors */
+    --color-border: #d5e4ff;
 
+    /* Accent Colors */
+    --color-gold: #ffb900;
+    --color-success: #16a34a;
+    --color-danger: #dc2626;
 
-    /* bordrcolors */
-    --color-border:#d5e4ff;
+    /* Text Colors */
+    --color-text-primary: #07377f;
+    --color-text-secondary: #64748b;
+    --color-text-white: #ffffff;
 
-    /* accentcolors */
-    --color-gold:#ffb900;
-    --color-succes:#16a34a;
-    --color-danger:#dc2626;
-
-    /* textcolor */
-    --color-text-primary:#07377f;
-    --color-text-secondry:#64748b;
-    --color-text-white:#ffffff;
-
-    /* gradient */
-    --color-gradient-primary:linear-gradient(135deg , #07377f , #064db5);
-    --color-gradient-light:linear-gradient(135deg , #ffffff , #eaf2ff);
+    /* Gradients */
+    --color-gradient-primary: linear-gradient(135deg, #07377f, #064db5);
+    --color-gradient-light: linear-gradient(135deg, #ffffff, #eaf2ff);
 }
